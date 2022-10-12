@@ -1,4 +1,14 @@
 {% block content %}
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/flask.css')}}">
+</head>
 <h1>Home</h1>
+<p1>Enter an Integer Value:</p1>
+<br>
+<p2>Enter Number:</p2>
+<form action="calculate" method="post">
+<input type="text" id="number" name="number">
+<input type="submit" value="Submit">
+</form>
 
 {% endblock %}

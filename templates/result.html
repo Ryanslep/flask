@@ -1,5 +1,9 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/flask.css')}}">
+</head>
 {% block content %}
-
-
+<p2>{{number}} is {{result}}</p2>
+<br>
+<a href="/calculate">Go Home</a>
 
 {% endblock %}
